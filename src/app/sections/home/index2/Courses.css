@@ -1,0 +1,74 @@
+/* टायटल सेंटरमध्ये */
+.sx-course-main-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1a1a5e;
+    margin-top: 0;       /* वरचा एक्स्ट्रा गॅप काढण्यासाठी */
+    margin-bottom: 10px; /* खालचा गॅप 20px वरून 10px केला */
+    text-align: center; 
+    font-family: 'Poppins', sans-serif;
+}
+
+/* स्क्रोलर कंटेनर - सेंटरला मर्यादित */
+.sx-courses-scroller {
+    overflow: hidden;
+    width: 100%;
+    max-width: 1100px; 
+    margin: 0 auto;    
+    padding: 5px 0;    /* पॅडिंग 10px वरून 5px केली */
+    position: relative;
+}
+
+/* इमेजेसचा ट्रॅक */
+.sx-courses-track {
+    display: flex;
+    gap: 25px;
+    width: max-content;
+    animation: courseScroll 12s linear infinite; 
+}
+
+/* इमेजची साईज मध्यम */
+.sx-course-item {
+    flex-shrink: 0;
+    width: 270px; 
+}
+
+.sx-course-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+}
+
+.sx-course-card img {
+    width: 100%;
+    display: block;
+    height: 170px; 
+    object-fit: cover;
+}
+
+/* होव्हर इफेक्ट */
+.sx-course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* माऊस नेल्यावर स्क्रोलिंग थांबेल */
+.sx-courses-scroller:hover .sx-courses-track {
+    animation-play-state: paused;
+}
+
+/* स्क्रोलिंग ॲनिमेशन (Right to Left) */
+@keyframes courseScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* मोबाईलसाठी */
+@media (max-width: 767px) {
+    .sx-course-item { width: 220px; }
+    .sx-courses-scroller { max-width: 100%; }
+}

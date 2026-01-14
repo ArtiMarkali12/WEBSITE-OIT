@@ -1,0 +1,139 @@
+.apply-job-popup {
+  transform: scale(0.75);
+  transform-origin: center;
+}
+
+.apply-job-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 2, 58, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.apply-job-popup {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  width: 450px;
+  max-width: 95%;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button - modern style */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 22px;             /* small compact size */
+  height: 22px;
+  border-radius: 50%;       /* perfect circle */
+  background: #e74c3c;      /* modern red */
+  border: none;
+  color: #fff;              /* white X */
+  font-size: 14px;          /* balanced X size */
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* subtle depth */
+  line-height: 1;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover effect: subtle scaling and slightly brighter red */
+.close-btn:hover {
+  background: #ff3b30;
+  transform: scale(1.1);
+}
+
+/* Click effect */
+.close-btn:active {
+  transform: scale(0.95);
+}
+
+
+
+
+.apply-job-popup h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1b1b3a;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Inputs */
+.apply-job-popup input,
+.apply-job-popup select,
+.apply-job-popup textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #2c3be6;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.apply-job-popup input:focus,
+.apply-job-popup select:focus,
+.apply-job-popup textarea:focus {
+  outline: none;
+  border-color: #2c3be6;
+  box-shadow: 0 0 0 2px rgba(44, 59, 230, 0.2);
+}
+
+.apply-job-popup textarea {
+  resize: none;
+}
+
+/* File input */
+.apply-job-popup input[type="file"] {
+  border: 1px dashed #2c3be6;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Submit button */
+.apply-job-popup button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  background: linear-gradient(135deg, #300357, #3a1c71);
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: filter 0.3s;
+  text-transform: uppercase;
+}
+
+.apply-job-popup button[type="submit"]:hover {
+  filter: brightness(1.1);
+}
+
+.apply-job-popup button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .apply-job-popup {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .apply-job-popup h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,78 @@
+/* Scroller Container Fix */
+.sx-center-scroller-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.sx-logo-scroller {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sx-logo-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left-pro 25s linear infinite;
+}
+
+.sx-logo-item {
+    width: 250px; 
+    padding: 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sx-logo-item img {
+    max-width: 190px; 
+    height: auto;
+    max-height: 85px;
+    object-fit: contain;
+}
+
+/* --- SOCIAL ICONS GAP & CLARITY FIX --- */
+.sx-social-box-container {
+    text-align: center;
+    margin-top: 30px; 
+    padding-bottom: 20px; 
+}
+
+.sx-social-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sx-s-icon {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px; /* Slightly larger for clarity */
+    text-decoration: none;
+    transition: 0.3s;
+    /* Hardware acceleration to fix pixel blur */
+    transform: translateZ(0); 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Icons Specific Branding Colors */
+.fb { background-color: #3b5998; }
+.yt { background-color: #ff0000; }
+.ln { background-color: #0077b5; }
+.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+
+.sx-s-icon:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+@keyframes scroll-left-pro {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

@@ -1,0 +1,237 @@
+/* ================= FOOTER BASE ================= */
+.footer {
+  background: linear-gradient(135deg, #000000, #111111, #ff6a00);
+  background-size: 300% 300%;
+  animation: gradientMove 8s ease infinite;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+/* ================= CONTAINER ================= */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 15px 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+/* ================= LOGO ================= */
+.footer-logo {
+  width: 120px;
+  background: #ffffff;
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #e6e6e6;
+}
+
+/* ================= TITLES ================= */
+.footer-col h4 {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-col h4::after {
+  content: "";
+  width: 38px;
+  height: 2px;
+  background: #ff6a00;
+  display: block;
+  margin-top: 6px;
+}
+
+/* ================= LINKS ================= */
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  margin-bottom: 8px;
+}
+
+.footer-col a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 6px;
+}
+
+/* ================= BOTTOM ================= */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  padding: 12px 10px;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+.floating-buttons {
+  position: fixed;
+  right: 15px;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.float-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff6a00;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.float-btn img {
+  width: 26px;
+}
+
+.float-btn:hover {
+  transform: scale(1.12);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.65);
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.call {
+  background: #111111;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-col h4::after {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* FLOATING BUTTONS */
+.floating-buttons {
+  position: fixed;
+  right: 18px;
+  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+/* BUTTON BASE */
+.float-btn {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.float-btn img {
+  width: 28px;
+  height: 28px;
+}
+
+/* HOVER */
+.float-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* COLORS */
+.whatsapp {
+  background: #25d366;
+}
+
+.call {
+  background: #000000;
+}
+
+/* ================= ANIMATIONS ================= */
+
+/* Pulse (WhatsApp) */
+.pulse {
+  animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Bounce (Call) */
+.bounce {
+  animation: bounceAnim 2.5s infinite;
+}
+
+@keyframes bounceAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .float-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .float-btn img {
+    width: 24px;
+  }
+}

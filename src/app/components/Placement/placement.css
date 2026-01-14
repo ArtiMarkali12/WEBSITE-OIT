@@ -1,0 +1,326 @@
+/* Import Google Fonts at the top of your CSS or index.html */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;800&display=swap");
+
+/* Global Settings */
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.placement-hero-section {
+  width: 100%;
+  min-height: 512px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../../../public/assets/images/Contact/Placement-backgroud.png")
+      center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.placement-hero-subtitle {
+  font-size: clamp(13px, 1.6vw, 15px);
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #ffb74d;
+  margin-bottom: 10px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.placement-hero-title {
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.placement-hero-text {
+  font-size: clamp(14px, 2vw, 17px);
+  max-width: 580px;
+  color: #eeeeee;
+  margin-bottom: 26px;
+  line-height: 1.6;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.placement-hero-btn {
+  background: linear-gradient(135deg, #ff7a18, #ff9f1c);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 34px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+  box-shadow: 0 8px 22px rgba(255, 122, 24, 0.45);
+  transition: all 0.35s ease;
+  animation: fadeInUp 1.4s ease forwards;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  background: linear-gradient(135deg, #ff9500, #ff7a18);
+  box-shadow: 0 12px 30px rgba(255, 136, 0, 0.55);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .placement-hero-section {
+    min-height: 460px;
+    text-align: center;
+  }
+
+  .placement-hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .placement-hero-section {
+    min-height: 420px;
+    padding: 40px 15px;
+  }
+
+  .placement-hero-btn {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+/* ===========================
+   PLACEMENT SECTION
+=========================== */
+/* ===========================
+   SECTION
+=========================== */
+
+.placement-section {
+  padding: 70px 0;
+  background: linear-gradient(180deg, #f7f7f7, #ffffff);
+  
+}
+
+/* ===========================
+   TITLE
+=========================== */
+
+.placement-title {
+  font-size: clamp(26px, 4vw, 34px);
+  font-weight: 900;
+  color: #ff6a00;
+  letter-spacing: 0.6px;
+}
+
+.placement-subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.placement-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  padding: 22px 15px 24px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  animation: fadeUp 0.7s ease forwards;
+  will-change: transform;
+}
+
+/* Hover */
+.placement-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.22);
+}
+
+/* Focus (keyboard accessibility) */
+.placement-card:focus-visible {
+  outline: 3px solid rgba(255, 106, 0, 0.5);
+}
+
+/* ===========================
+   SHINE EFFECT
+=========================== */
+
+.placement-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -90%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.45),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shine 3.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -90%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+/* ===========================
+   BADGE
+=========================== */
+
+.placement-OrangeITech-head {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: linear-gradient(135deg, #ff6a00, #ff3c00);
+  color: #fff;
+  padding: 2px 6px;
+  font-size: 9.5px;
+  font-weight: 700;
+  border-radius: 7px;
+  letter-spacing: 0.3px;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.placement-img {
+  width: 145px;
+  height: 165px;
+  margin: 30px auto 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e3e1e1;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+}
+
+.placement-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.placement-card h5 {
+  font-size: 18.5px;
+  font-weight: 700;
+  color: #ff6a00;
+  margin-bottom: 4px;
+}
+
+.placement-card p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.placement-card h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #00bfa6;
+}
+
+/* ===========================
+   FADE UP
+=========================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   LIGHTBOX
+=========================== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.lightbox-img {
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 16px;
+  box-shadow: 0 25px 70px rgba(255, 90, 0, 0.65);
+}
+
+.close-btn {
+  position: absolute;
+  top: 22px;
+  right: 32px;
+  font-size: 38px;
+  color: #fff;
+  cursor: pointer;
+}

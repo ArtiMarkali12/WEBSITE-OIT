@@ -1,0 +1,48 @@
+/* Gap purnpane kami karnyathi */
+.sx-about-bx3-content-wrap {
+    padding-top: 0px !important; 
+    margin-top: -110px !important; /* Gap ajun kami karnyathi negative margin vadhavla */
+    position: relative;
+    z-index: 10;
+}
+
+.custom-about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Side-by-side Layout Force */
+.custom-row-flex {
+    display: flex !important;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.custom-video-col {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding-right: 15px;
+}
+
+.custom-content-col {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+    padding-left: 25px;
+    text-align: left !important;
+}
+
+/* Underline (Orange line) remove karnyathi */
+.sx-title::after, .sx-title::before {
+    display: none !important; 
+}
+
+/* Mobile setting */
+@media (max-width: 991px) {
+    .sx-about-bx3-content-wrap { margin-top: -50px !important; }
+    .custom-video-col, .custom-content-col {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
