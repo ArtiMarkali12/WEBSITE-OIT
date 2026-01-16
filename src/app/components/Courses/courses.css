@@ -786,6 +786,7 @@ p, li, span, .btn, .card-text {
   color: #0b1c4d;
   margin-bottom: 30px;
   text-align: center;
+  
 }
 
 .fees-card {
@@ -1119,4 +1120,432 @@ p, li, span, .btn, .card-text {
     font-size: 14px;
     line-height: 1.5;
   }
+}
+
+
+
+/* FAQ CARD */
+.faq-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e3e6ff;
+}
+
+/* FAQ QUESTION (ACCORDION HEADER) */
+.faq-question {
+  padding: 18px 20px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+
+  /* 🌈 Animated Gradient (SAME AS faq-module) */
+  background: linear-gradient(135deg, #2b0a78, #4b1fbf, #6a2fd8);
+  background-size: 300% 300%;
+  animation: gradientFlow 6s ease infinite;
+
+  border-radius: 14px;
+}
+
+/* ❌ NO HOVER COLOR CHANGE */
+.faq-question:hover {
+  background: linear-gradient(135deg, #2b0a78, #4b1fbf, #6a2fd8);
+}
+
+/* ICON STYLE */
+.faq-icon {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+/* FAQ ANSWER */
+.faq-answer {
+  padding: 16px 20px;
+  background: #ffffff;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* ✨ Diagonal Gradient Animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.faq-tech-wrapper {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #f5f6ff, #ffffff);
+}
+
+.faq-tech-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 0.7fr;
+  gap: 70px;
+  align-items: flex-start;
+}
+
+/* FAQ COLUMN */
+.faq-col {
+  width: 100%;
+}
+
+/* TECH COLUMN */
+.tech-col {
+  width: 100%;
+}
+
+/* ================= TECHNOLOGIES ================= */
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.tech-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1b1f6b; /* deep violet-blue */
+  border-left: 4px solid #6f42c1; /* violet */
+  transition: all 0.25s ease;
+}
+
+/* Subtle hover without shadow */
+.tech-card:hover {
+  background: #f2f3ff;
+  border-left-color: #0d6efd; /* blue */
+  color: #0d2c6c;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .faq-tech-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ======================= SYLLABUS / CURRICULUM SECTION ======================= */
+
+/* ===== SYLLABUS WRAPPER ===== */
+.syllabus-wrapper {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f0f2ff, #ffffff);
+  display: flex;
+  justify-content: center;
+}
+
+.syllabus-container {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* TITLE */
+.faq-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1b1f6b;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* SUBTITLE */
+.faq-subtitle {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* STACKED LIST */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* MODULE WRAPPER */
+.faq-module-wrapper {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e3e6ff;
+}
+
+/* ================= TOP-LEVEL MODULE (Frontend / Backend ONLY) ================= */
+.faq-module {
+  padding: 18px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+
+  /* 🌈 Animated Gradient */
+  background: linear-gradient(135deg, #2b0a78, #4b1fbf, #6a2fd8);
+  background-size: 300% 300%;
+  animation: gradientFlow 6s ease infinite;
+
+  border-radius: 14px 14px 0 0;
+  border-bottom: 1px solid #e3e6ff;
+}
+
+/* ❌ NO HOVER COLOR CHANGE */
+.faq-module:hover {
+  background: linear-gradient(135deg, #2b0a78, #4b1fbf, #6a2fd8);
+}
+
+/* ✨ Smooth diagonal gradient animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* ================= FINGER ICON ================= */
+.module-plus {
+  font-size: 22px;
+  font-weight: 900;
+  color: white;
+  display: inline-block;
+  animation: fingerMove 1.3s infinite ease-in-out;
+}
+
+/* 👉🏻 Finger animation */
+@keyframes fingerMove {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* ================= MODULE CONTENT ================= */
+.module-desc {
+  padding: 16px 20px;
+  background: #ffffff;
+}
+
+/* INNER WRAPPER */
+.inner-wrapper {
+  margin-bottom: 12px;
+}
+
+/* ================= INNER SYLLABUS ITEMS (UNCHANGED) ================= */
+.inner-title {
+  background: #f8f9ff;
+  padding: 12px 16px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  color: #0b1c4d;
+}
+
+.inner-title:hover {
+  background: #e4eaff;
+}
+
+/* ================= SYLLABUS LIST ================= */
+.syllabus-list {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.syllabus-list li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .syllabus-container {
+    max-width: 100%;
+  }
+
+  .faq-module {
+    font-size: 15px;
+  }
+
+  .inner-title {
+    font-size: 13px;
+  }
+}
+
+
+
+
+/* ===== WHO CAN DO THIS ===== */
+.who-can-do {
+  padding: 60px 0;
+  background: #fff;
+}
+.who-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1a2763;
+  margin-bottom: 35px;
+}
+
+.cards-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  align-items: stretch;
+}
+
+/* Card */
+.who-card {
+  width: 100%;
+  max-width: 260px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.07);
+  border: 1px solid #f2dede;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+.who-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* balances content */
+}
+.who-card:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon */
+.who-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.who-card h4 {
+  font-size: 20px;
+  color: #1a2763;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* List */
+.who-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.who-card ul li {
+  font-size: 15px;
+  color: #222;
+  margin: 6px 0;
+  text-align: left;
+}
+
+
+.fee-title {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 22px;
+}
+
+.angular-title{
+   font-size: 38px;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 22px;
+  text-align:center;
+  
+  
+}
+
+
+.who-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1c4d;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+
+
+.curriculam-title{
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 22px;
+  align-items: center;
+  margin-left: 7%;
+}
+.python-title{
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 22px;
+  align-items: center;
+  margin-left: 3%;
+}
+.mean-title{
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 22px;
+  text-align: center;  
+}
+.angular-title{
+  font-size: 38px;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 22px;
+  text-align: center;     /* centers text */
+  white-space: nowrap;
 }
