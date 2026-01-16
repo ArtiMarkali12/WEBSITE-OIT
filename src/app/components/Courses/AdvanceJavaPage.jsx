@@ -427,7 +427,6 @@ export default function AdvanceJavaPage() {
             </div>
 
             {/* RIGHT IMAGE */}
-            
           </Row>
         </Container>
       </section>
@@ -805,56 +804,55 @@ export default function AdvanceJavaPage() {
           </p>
 
           {/* ROLE CARDS */}
-       <Row className="gy-4 mt-4">
-  {/* Java Developer */}
-  <Col md={4}>
-    <div className="career-card">
-      <FaJava className="career-icon" />
-      <span>Java Developer</span>
-    </div>
-  </Col>
+          <Row className="gy-4 mt-4">
+            {/* Java Developer */}
+            <Col md={4}>
+              <div className="career-card">
+                <FaJava className="career-icon" />
+                <span>Java Developer</span>
+              </div>
+            </Col>
 
-  {/* Backend Developer */}
-  <Col md={4}>
-    <div className="career-card">
-      <FaServer className="career-icon" />
-      <span>Backend Developer</span>
-    </div>
-  </Col>
+            {/* Backend Developer */}
+            <Col md={4}>
+              <div className="career-card">
+                <FaServer className="career-icon" />
+                <span>Backend Developer</span>
+              </div>
+            </Col>
 
-  {/* Spring Boot Developer */}
-  <Col md={4}>
-    <div className="career-card">
-      <FaLeaf className="career-icon" />
-      <span>Spring Boot Developer</span>
-    </div>
-  </Col>
+            {/* Spring Boot Developer */}
+            <Col md={4}>
+              <div className="career-card">
+                <FaLeaf className="career-icon" />
+                <span>Spring Boot Developer</span>
+              </div>
+            </Col>
 
-  {/* Software Engineer */}
-  <Col md={4}>
-    <div className="career-card">
-      <FaCode className="career-icon" />
-      <span>Software Engineer</span>
-    </div>
-  </Col>
+            {/* Software Engineer */}
+            <Col md={4}>
+              <div className="career-card">
+                <FaCode className="career-icon" />
+                <span>Software Engineer</span>
+              </div>
+            </Col>
 
-  {/* Full-Stack Java Developer */}
-  <Col md={4}>
-    <div className="career-card">
-      <FaLayerGroup className="career-icon" />
-      <span>Full-Stack Java Developer</span>
-    </div>
-  </Col>
+            {/* Full-Stack Java Developer */}
+            <Col md={4}>
+              <div className="career-card">
+                <FaLayerGroup className="career-icon" />
+                <span>Full-Stack Java Developer</span>
+              </div>
+            </Col>
 
-  {/* Maven */}
-  <Col md={4}>
-    <div className="career-card">
-      <FaCubes className="career-icon" />
-      <span>Maven</span>
-    </div>
-  </Col>
-</Row>
-
+            {/* Maven */}
+            <Col md={4}>
+              <div className="career-card">
+                <FaCubes className="career-icon" />
+                <span>Maven</span>
+              </div>
+            </Col>
+          </Row>
 
           {/* DESCRIPTION */}
           <p className="career-note text-center mt-5">
@@ -871,7 +869,7 @@ export default function AdvanceJavaPage() {
             <Col lg={6} md={12} className="text-center mb-4 mb-lg-0">
               <div className="certificate-image-wrapper">
                 <img
-                  src={publicUrlFor("images/courses/certificateImg.jpg")}
+                  src={publicUrlFor("images/courses/CertificateImg.jpg")}
                   alt="Java Course Image"
                   className="gallery-image"
                 />

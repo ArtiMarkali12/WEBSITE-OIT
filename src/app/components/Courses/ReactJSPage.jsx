@@ -970,7 +970,7 @@ export default function DotNetFullStackPage() {
             <Col lg={6} md={12} className="text-center mb-4 mb-lg-0">
               <div className="certificate-image-wrapper">
                 <img
-                  src={publicUrlFor("images/courses/certificateImg.jpg")}
+                  src={publicUrlFor("images/courses/CertificateImg.jpg")}
                   alt="Java Course Image"
                   className="gallery-image"
                 />

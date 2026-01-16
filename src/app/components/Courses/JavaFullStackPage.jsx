@@ -1176,10 +1176,10 @@ export default function JavaFullStackPage() {
 
                 
  <img
-    src={publicUrlFor("images/courses/certificateImg.jpg")}
-    alt="Java Course Image"
-    className="gallery-image"
-  />
+                  src={publicUrlFor("images/courses/CertificateImg.jpg")}
+                  alt="Java Course Image"
+                  className="gallery-image"
+                />
                   
                  
               </div>

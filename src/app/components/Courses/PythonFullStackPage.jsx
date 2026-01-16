@@ -1052,7 +1052,7 @@ export default function PythonFullStackPage() {
             {/* LEFT: CERTIFICATE IMAGE */}
             <Col lg={6} md={12} className="text-center mb-4 mb-lg-0">
               <div className="certificate-image-wrapper">
-                <img
+               <img
                   src={publicUrlFor("images/courses/CertificateImg.jpg")}
                   alt="Java Course Image"
                   className="gallery-image"
