@@ -5,6 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 // import CertificateImg from "../../assets/images/courses/CertificateImg.jpg";
 // import { bannerData } from "../../../globals/banner";
 import { publicUrlFor } from "../../../globals/constants";
+import { NavLink } from "react-router-dom";
 
 import {
   FaTools,
@@ -265,20 +266,22 @@ export default function JavaFullStackPage() {
             </p>
 
             <div className="hero-buttons">
-              <a
-                href="/contact-us"
-                className="btn-primary"
-                style={{ textDecoration: "none" }}
-              >
-                Download Syllabus
-              </a>
-              <a
-                href="/contact-us"
-                className="btn-outline"
-                style={{ textDecoration: "none" }}
-              >
-                Book Free Demo Class
-              </a>
+               <NavLink
+                              to="/contact-us"
+                              className="btn-primary"
+                              style={{ textDecoration: "none" }}
+                            >
+                              Download Syllabus
+                            </NavLink>
+              
+                    
+                            <NavLink
+                              to="/contact-us"
+                              className="btn-outline"
+                              style={{ textDecoration: "none" }}
+                            >
+                              Enroll Now
+                            </NavLink>
             </div>
           </div>
 
@@ -552,13 +555,13 @@ export default function JavaFullStackPage() {
               </p>
 
               {/* <Button className=" "></Button> */}
-              <a
-                href="/contact-us"
+              <NavLink
+                to="/contact-us"
                 className="hero-buttons btn-primary mt-4"
                 style={{ textDecoration: "none", width: "180px" }}
               >
                 Request Callback
-              </a>
+              </NavLink>
             </Col>
 
             {/* RIGHT SIDE – FEATURE GRID */}
@@ -843,9 +846,9 @@ export default function JavaFullStackPage() {
       {/* ===== CTA ===== */}
       <section className="cta-section text-center">
         <h2>Start Your IT Career Today</h2>
-        <a href="/contact-us" className="btn btn-primary cta-btn">
+          <NavLink to="/contact-us" className="btn btn-primary cta-btn">
           Book Free Demo
-        </a>
+        </NavLink>
       </section>
     </div>
   );

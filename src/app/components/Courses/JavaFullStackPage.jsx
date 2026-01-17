@@ -637,14 +637,6 @@ export default function JavaFullStackPage() {
                 Download Syllabus
               </NavLink>
 
-              {/* <a
-                href="/contact-us"
-                className="btn-outline"
-                style={{ textDecoration: "none" }}
-              >
-                Enroll Now
-              </a> */}
-
               <NavLink
                 to="/contact-us"
                 className="btn-outline"
@@ -932,13 +924,21 @@ export default function JavaFullStackPage() {
               </p>
 
               {/* <Button className=" "></Button> */}
-              <a
+              {/* <a
                 href="/contact-us"
                 className="hero-buttons btn-primary mt-4"
                 style={{ textDecoration: "none", width: "180px" }}
               >
                 Request Callback
-              </a>
+              </a> */}
+
+              <NavLink
+                to="/contact-us"
+                className="hero-buttons btn-primary mt-4"
+                style={{ textDecoration: "none", width: "180px" }}
+              >
+                Request Callback
+              </NavLink>
             </Col>
 
             {/* RIGHT SIDE – FEATURE GRID */}
@@ -1224,11 +1224,7 @@ export default function JavaFullStackPage() {
           Book Free Demo
         </a> */}
 
-        <NavLink
-          to="/contact-us"
-          onClick={() => alert("clicked")}
-          className="btn btn-primary cta-btn"
-        >
+        <NavLink to="/contact-us" className="btn btn-primary cta-btn">
           Book Free Demo
         </NavLink>
       </section>
