@@ -420,3 +420,110 @@ body.no-scroll {
 
 
 
+/* ===============================
+   MOBILE HEADER FIX — LOGO VISIBLE
+================================ */
+@media (max-width: 992px) {
+
+  /* Header layout */
+  .main-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* LOGO FIX */
+  .logo-header {
+    position: relative;
+    z-index: 1200; /* sidebar (1100) पेक्षा जास्त */
+  }
+
+  .logo-header img {
+    height: 42px;
+    max-height: 45px;
+    display: block;
+  }
+
+  /* TOGGLER FIX (remove left:210px issue) */
+  .navbar-toggler {
+    position: relative;
+    margin-left: auto;
+    z-index: 1200;
+  }
+
+  /* SIDEBAR MENU */
+  .header-nav .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    background: #ffffff;
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    z-index: 1100;
+    padding: 80px 20px 20px;
+    overflow-y: auto;
+  }
+
+  .header-nav.active .navbar-collapse {
+    transform: translateX(0);
+  }
+
+  /* OVERLAY */
+  .header-nav::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+  }
+
+  .header-nav.active::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+
+
+/* ===============================
+   NAV MENU UNDERLINE EFFECT
+================================ */
+.header-nav .navbar-nav > li > a {
+  position: relative;
+  padding-bottom: 6px;
+}
+
+/* underline (hidden by default) */
+.header-nav .navbar-nav > li > a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #ff6a00;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* hover effect */
+.header-nav .navbar-nav > li > a:hover::after {
+  width: 100%;
+}
+
+/* active menu item */
+.header-nav .navbar-nav > li.active > a::after,
+.header-nav .navbar-nav > li > a.active::after {
+  width: 100%;
+}
+
+
+
+
