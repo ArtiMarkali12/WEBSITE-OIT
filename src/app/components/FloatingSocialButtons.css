@@ -10,8 +10,8 @@
 
 /* Common button */
 .floating-btn {
-  width: 52px;
-  height: 52px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -66,3 +66,24 @@
     bottom: 70px;
   }
 }
+
+
+/* Mobile fix */
+@media (max-width: 768px) {
+  .floating-social-wrapper {
+    right: 12px;
+    bottom: 70px;
+  }
+
+  /* Hide all buttons first */
+  .floating-social-wrapper .floating-btn {
+    display: none;
+  }
+
+  /* Show only WhatsApp and Call */
+  .floating-social-wrapper .floating-btn.whatsapp,
+  .floating-social-wrapper .floating-btn.call {
+    display: flex;
+  }
+}
+
