@@ -47,7 +47,20 @@ useEffect(() => {
 
   return (
     /* ✅ FIX 1: removed navbar-collapse from header */
-    <header className={`header-nav ${isActive ? "active" : ""}`}>
+    // <header className={`header-nav ${isActive ? "active" : ""}`}>
+    <header
+  className={`header-nav ${isActive ? "active" : ""}`}
+  onClick={(e) => {
+    if (
+      window.innerWidth <= 992 &&
+      e.target === e.currentTarget   // 👈 IMPORTANT
+    ) {
+      setIsActive(false);
+    }
+  }}
+>
+
+
       <div className="sticky-header main-bar-wraper navbar-expand-lg">
         <div className="main-bar">
           <div className="container clearfix" style={{display:"flex"}}>
@@ -57,7 +70,15 @@ useEffect(() => {
                 <ItodoImage src="images/courses/logo.png" alt="Logo" />
               </NavLink>
               {/* MOBILE TOGGLE */}
-              <button className="navbar-toggler" onClick={toggleNavClass}>
+              {/* <button className="navbar-toggler" onClick={toggleNavClass}> */}
+              <button
+  className="navbar-toggler"
+  onClick={(e) => {
+    e.stopPropagation(); // 👈 MUST
+    toggleNavClass();
+  }}
+>
+
                 <span className="icon-bar" />
                 <span className="icon-bar" />
                 <span className="icon-bar" />
@@ -65,7 +86,12 @@ useEffect(() => {
             </div>
 
             {/* ✅ FIX 2: cleaned navbar-collapse */}
-            <div className="navbar-collapse">
+            {/* <div className="navbar-collapse"> */}
+            <div
+  className="navbar-collapse"
+  onClick={(e) => e.stopPropagation()}   // 🔒 stop bubbling
+>
+
               <ul className="nav navbar-nav">
                 <li>
                   <NavLink to="/">Home</NavLink>

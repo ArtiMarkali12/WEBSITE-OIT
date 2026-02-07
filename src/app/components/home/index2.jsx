@@ -1,6 +1,6 @@
 import SectionSlider2 from "../../sections/home/index2/section-slider2";
 import SectionAboutCompany2 from "../../sections/home/index2/section-about-company2";
-import SectionServices2 from "../../sections/home/index2/section-services2";
+// import SectionServices2 from "../../sections/home/index2/section-services2";
 import SectionClients2 from "../../sections/home/index2/section-clients2";
 import SectionCaseStudy2 from "../../sections/home/index2/section-case-study2";
 // import SectionTeam1 from "../../sections/home/index2/section-team1";
@@ -20,7 +20,7 @@ function Home2Page() {
         <>
             <SectionSlider2 />
             <SectionAboutCompany2 />
-            <SectionServices2 />
+            {/* <SectionServices2 /> */}
             <SectionClients2 />
             <div className="sx-div-line" />
             <SectionCaseStudy2 />

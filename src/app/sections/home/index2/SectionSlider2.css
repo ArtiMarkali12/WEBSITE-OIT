@@ -340,7 +340,7 @@ body {
 
 @media (max-width: 500px) {
   .batches-section table {
-    font-size: 13px;
+    font-size: 8px;
   }
 
   .batches-section th,
@@ -352,139 +352,6 @@ body {
     font-size: 1.4rem;
   }
 }
-
-
-
-
-
-/* ================== MOBILE RESPONSIVE BATCHES TABLE ================== */
-@media (max-width: 768px) {
-
-  .batches-section table,
-  .batches-section thead,
-  .batches-section tbody,
-  .batches-section th,
-  .batches-section td,
-  .batches-section tr {
-    display: block;
-    width: 100%;
-  }
-
-  /* Hide table header */
-  .batches-section thead {
-    display: none;
-  }
-
-  /* Each row becomes a card */
-  .batches-section tbody tr {
-    background: #ffffff;
-    margin-bottom: 15px;
-    border-radius: 12px;
-    padding: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-  }
-
-  .batches-section tbody tr:hover {
-    background: #ffffff !important;
-  }
-
-  /* Each cell */
-  .batches-section td {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 8px 6px;
-    font-size: 14px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .batches-section td:last-child {
-    border-bottom: none;
-  }
-
-  /* Labels */
-  .batches-section td::before {
-    content: attr(data-label);
-    font-weight: 700;
-    color: #333;
-    font-size: 13px;
-    padding-right: 10px;
-    min-width: 90px;
-  }
-
-  /* Action button center */
-  .batches-section td:last-child {
-    justify-content: center;
-  }
-
-  .batches-section .orange-btn {
-    font-size: 12px !important;
-    padding: 6px 14px !important;
-    border-radius: 20px;
-  }
-
-  .batches-section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 25px;
-  }
-}
-
-/* ================== EXTRA SMALL DEVICES ================== */
-@media (max-width: 480px) {
-  .batches-section td {
-    font-size: 13px;
-  }
-
-  .batches-section td::before {
-    font-size: 12px;
-  }
-}
-
-
-
-
-
-/* ===== FIX ACTION ROW & BUTTON (MOBILE) ===== */
-@media (max-width: 768px) {
-
-  /* Action row special handling */
-  .batches-section td[data-label="Action"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 12px;
-  }
-
-  /* Hide "Action" label text */
-  .batches-section td[data-label="Action"]::before {
-    display: none;
-  }
-
-  /* Button proper sizing */
-  .batches-section td[data-label="Action"] .orange-btn {
-    width: auto;
-    min-width: 120px;
-    text-align: center;
-    font-size: 13px !important;
-    padding: 8px 20px !important;
-    border-radius: 25px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,6 +1,132 @@
-/* Scroller Container Fix */
+/* ===============================
+   HEADING
+================================ */
+.sx-placement-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sx-placement-heading .sx-title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.sx-placement-heading .sx-title span {
+  color: #ff6600;
+}
+
+.sx-placement-heading p {
+  max-width: 850px;
+  margin: 8px auto 0;
+  color: #666;
+}
+
+/* ===============================
+   COMPANY LOGOS GRID (STATIC)
+================================ */
 .sx-center-scroller-box {
-    max-width: 1000px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sx-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.sx-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sx-logo-item img {
+  max-width: 220px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sx-logo-item img:hover {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   SOCIAL ICONS
+================================ */
+.sx-social-box-container {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.sx-social-icons-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.sx-s-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.sx-s-icon:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.yt {
+  background: #ff0000;
+}
+
+.ln {
+  background: #0077b5;
+}
+
+.ig {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .sx-placement-heading .sx-title {
+    font-size: 28px;
+  }
+
+  .sx-logo-grid {
+    gap: 25px;
+  }
+
+  .sx-logo-item img {
+    max-width: 170px;
+    max-height: 90px;
+  }
+}
+/* Scroller Container */
+.sx-center-scroller-box {
+    max-width: 1200px;   /* slightly wider container */
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -8,34 +134,44 @@
 
 .sx-logo-scroller {
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
+/* Logo Grid */
 .sx-logo-track {
     display: flex;
-    width: max-content;
-    animation: scroll-left-pro 25s linear infinite;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;   /* space between logos */
 }
 
+/* Each Logo Box */
 .sx-logo-item {
-    width: 250px; 
-    padding: 0 40px;
+    width: 280px;   /* 🔥 increased size */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
+/* Logo Image */
 .sx-logo-item img {
-    max-width: 190px; 
+    max-width: 240px;   /* 🔥 bigger logos */
+    max-height: 120px;  /* 🔥 taller */
+    width: 100%;
     height: auto;
-    max-height: 85px;
     object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-/* --- SOCIAL ICONS GAP & CLARITY FIX --- */
+.sx-logo-item img:hover {
+    transform: scale(1.08);
+}
+
+/* SOCIAL ICONS (unchanged) */
 .sx-social-box-container {
     text-align: center;
-    margin-top: 30px; 
-    padding-bottom: 20px; 
+    margin-top: 30px;
+    padding-bottom: 20px;
 }
 
 .sx-social-icons-row {
@@ -52,16 +188,12 @@
     justify-content: center;
     border-radius: 6px;
     color: #fff;
-    font-size: 20px; /* Slightly larger for clarity */
+    font-size: 20px;
     text-decoration: none;
     transition: 0.3s;
-    /* Hardware acceleration to fix pixel blur */
-    transform: translateZ(0); 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    transform: translateZ(0);
 }
 
-/* Icons Specific Branding Colors */
 .fb { background-color: #3b5998; }
 .yt { background-color: #ff0000; }
 .ln { background-color: #0077b5; }
@@ -72,7 +204,143 @@
     opacity: 0.9;
 }
 
-@keyframes scroll-left-pro {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+
+
+/* ===============================
+   LOGO CONTAINER
+================================ */
+.sx-center-scroller-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   DESKTOP GRID
+================================ */
+.sx-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* ===============================
+   LOGO CARD
+================================ */
+.sx-logo-item {
+  width: 100%;
+  height: 110px;              /* 🔥 tight height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+}
+
+/* LOGO IMAGE */
+.sx-logo-item img {
+  max-width: 140px;
+  max-height: 70px;
+  object-fit: contain;
+}
+
+/* ===============================
+   MOBILE FIX (IMPORTANT 🔥)
+================================ */
+@media (max-width: 768px) {
+  .sx-logo-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 🔥 2 logos per row */
+    gap: 14px;                               /* 🔥 reduce vertical gap */
+  }
+
+  .sx-logo-item {
+    height: 90px;
+  }
+
+  .sx-logo-item img {
+    max-width: 120px;
+    max-height: 60px;
+  }
+}
+
+
+
+/* ===============================
+   LOGO CONTAINER
+================================ */
+.sx-center-scroller-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===============================
+   LOGO GRID – 3 PER ROW
+================================ */
+.sx-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 🔥 ALWAYS 3 logos */
+  gap: 16px;                              /* 🔥 tight spacing */
+  justify-items: center;
+}
+
+/* ===============================
+   LOGO CARD
+================================ */
+.sx-logo-item {
+  width: 100%;
+  height: 95px;                          /* 🔥 equal height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+/* LOGO IMAGE */
+.sx-logo-item img {
+  max-width: 110px;
+  max-height: 55px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.sx-logo-item img:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   SMALL DEVICES (VERY SMALL PHONES)
+================================ */
+@media (max-width: 380px) {
+  .sx-logo-item {
+    height: 80px;
+  }
+
+  .sx-logo-item img {
+    max-width: 95px;
+    max-height: 45px;
+  }
+}
+
+
+
+/* ===============================
+   COURSE CARD IMAGE FIX
+================================ */
+
+.course-image {
+  width: 100%;
+  height: 200px;              /* 🔥 same height for all */
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;        /* optional – clean look */
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 🔥 magic line */
 }
