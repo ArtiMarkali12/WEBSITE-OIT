@@ -279,7 +279,7 @@
 .sx-logo-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 🔥 ALWAYS 3 logos */
-  gap: 16px;                              /* 🔥 tight spacing */
+  gap: 5px;                              /* 🔥 tight spacing */
   justify-items: center;
 }
 
@@ -343,4 +343,33 @@
   width: 100%;
   height: 100%;
   object-fit: cover;          /* 🔥 magic line */
+}
+/* LOGO CONTAINER */
+.sx-center-scroller-box {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* GRID – GAP CONTROL ONLY */
+.sx-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 14px;   /* 👈 horizontal gap कमी */
+  row-gap: 8px;       /* 👈 vertical gap कमी */
+  justify-items: center;
+  align-items: center;
+}
+
+/* LOGO ITEM – HEIGHT UNCHANGED */
+.sx-logo-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE – AS IS */
+.sx-logo-item img {
+  max-width: 220px;
+  max-height: 150px;
+  object-fit: contain;
 }
