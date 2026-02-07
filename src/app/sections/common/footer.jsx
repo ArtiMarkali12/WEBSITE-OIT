@@ -197,7 +197,7 @@ export default function Footer() {
 
       {/* BOTTOM */}
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Orange ITech. All Rights Reserved.
+        © {new Date().getFullYear()} Orange ITech . All Rights Reserved.
       </div>
 
       {/* FLOATING BUTTONS */}
