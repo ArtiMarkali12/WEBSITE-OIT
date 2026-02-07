@@ -56,9 +56,9 @@ function RootLayout() {
         <Footer />
 
         {/* Scroll to top */}
-        <button className="scroltop">
+        {/* <button className="scroltop">
           <span className="fa fa-angle-up relative" id="btn-vibrate"></span>
-        </button>
+        </button> */}
       </div>
     </>
   );
