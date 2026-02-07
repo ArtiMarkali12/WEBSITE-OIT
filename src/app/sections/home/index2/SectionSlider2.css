@@ -596,3 +596,56 @@ body {
 
 
 
+/* ===== HERO LEFT EXTRA CONTENT ===== */
+.hero-left-extra {
+  margin: 18px 0;
+  max-width: 520px;
+}
+
+.hero-left-extra p {
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.hero-left-extra ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.hero-left-extra ul li {
+  font-size: 15px;
+  color: #ffb400;
+  margin-bottom: 6px;
+}
+
+
+.hero-right {
+  width: 360px;
+  min-height: 400px;   /* 👈 इथे height वाढेल */
+  background: linear-gradient(145deg, #ffffff, #f8f8f8);
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.25),
+    inset 0 0 0 1px rgba(255, 180, 0, 0.25);
+}
+.hero-overlay {
+  height: 75vh;                /* 👈 100% ऐवजी कमी */
+  background: rgba(0, 0, 0, 0.75); /* थोडं light */
+}
+
+
+
+
+
+
+
+/* ====================================================== */
+
+
+
+
+/* ============================================================ */

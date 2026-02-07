@@ -9,6 +9,8 @@ import {
   FaYoutube,
   FaLinkedinIn,
 } from "react-icons/fa";
+import SocialBtn from "../../components/SocialBtn";
+// import FloatingSocialButtons from "../../components/FloatingSocialButtons";
 
 const API = process.env.REACT_APP_API_BASE_URL;
 const DOMAIN = process.env.REACT_APP_DOMAIN;
@@ -48,12 +50,64 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-container">
         {/* LOGO */}
-        <div className="footer-col">
-          <img src="/logo5.png" alt="Logo" className="footer-logo" />
-          <p className="footer-text">
-            Building careers with practical learning & industry-ready skills.
-          </p>
-        </div>
+       <div className="footer-col">
+  <img src="/logo5.png" alt="Logo" className="footer-logo" />
+
+  <p className="footer-text">
+    Building careers with practical learning & industry-ready skills.
+  </p>
+
+  {/* 🔥 SOCIAL ICONS BELOW TEXT */}
+  {/* 🔥 SOCIAL ICONS BELOW TEXT */}
+<div className="footer-social-icons">
+  <a
+    href="https://www.facebook.com/orangeitech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-icon fb"
+  >
+    <FaFacebookF />
+  </a>
+
+  <a
+    href="https://www.instagram.com/orangeitech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-icon ig"
+  >
+    <FaInstagram />
+  </a>
+
+  <a
+    href="https://www.linkedin.com/company/orange-itech-intstitue/?originalSubdomain=in"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-icon ln"
+  >
+    <FaLinkedinIn />
+  </a>
+
+  <a
+    href="https://www.youtube.com/@Orangeitech"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-icon yt"
+  >
+    <FaYoutube />
+  </a>
+
+  <a
+    href="https://wa.me/9975708774"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-icon wa"
+  >
+    <FaWhatsapp />
+  </a>
+</div>
+
+</div>
+
 
         {/* QUICK LINKS */}
         <div className="footer-col">
@@ -127,8 +181,19 @@ export default function Footer() {
 
             <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a>
           </p>
+
+          
+         
         </div>
+
+      
+        {/* <FloatingSocialButtons/> */}
       </div>
+
+
+
+
+
 
       {/* BOTTOM */}
       <div className="footer-bottom">
@@ -136,13 +201,17 @@ export default function Footer() {
       </div>
 
       {/* FLOATING BUTTONS */}
+      
 
      
           {/* <a href="https://wa.me/9975708774" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp">
           <FaWhatsapp />
         </a> */}
 
-        
+         {/* ✅ SOCIAL ICONS BELOW SERVICES */}
+  <div className="footer-social-row">
+    <SocialBtn />
+  </div>
         
 
 

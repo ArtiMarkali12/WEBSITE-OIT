@@ -776,10 +776,13 @@ export default function CoreJavaPage() {
           </p>
 
           {/* ROLE CARDS */}
-       <Row className="gy-4 mt-4">
+      <Row className="gy-4 mt-4">
   {/* Java Developer */}
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaJava className="career-icon" />
       <span>Java Developer</span>
     </div>
@@ -787,7 +790,10 @@ export default function CoreJavaPage() {
 
   {/* Software Engineer */}
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaCode className="career-icon" />
       <span>Software Engineer</span>
     </div>
@@ -795,7 +801,10 @@ export default function CoreJavaPage() {
 
   {/* Backend Developer */}
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaServer className="career-icon" />
       <span>Backend Developer</span>
     </div>
@@ -803,7 +812,10 @@ export default function CoreJavaPage() {
 
   {/* Application Developer */}
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaLaptopCode className="career-icon" />
       <span>Application Developer</span>
     </div>
@@ -811,7 +823,10 @@ export default function CoreJavaPage() {
 
   {/* Junior Full-Stack Developer */}
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaLaptopCode className="career-icon" />
       <span>Junior Full-Stack Developer</span>
     </div>
@@ -819,12 +834,16 @@ export default function CoreJavaPage() {
 
   {/* Core Java Developer */}
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaGlobe className="career-icon" />
       <span>Core Java Developer</span>
     </div>
   </Col>
 </Row>
+
           {/* DESCRIPTION */}
           <p className="career-note text-center mt-5">
            Core Java Course are in high demand across IT services, startups,

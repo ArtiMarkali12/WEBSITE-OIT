@@ -186,9 +186,84 @@
 }
 
 
+/* ================= SERVICES SOCIAL ROW ================= */
+.footer-social-row {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* जर SocialBtn मध्ये a tags असतील */
+.footer-social-row a {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-social-row a:hover {
+  transform: translateY(-3px) scale(1.08);
+}
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= SOCIAL ICONS BELOW LOGO TEXT ================= */
+.footer-social-icons {
+  margin-top: 18px;              /* 🔥 text खालची space */
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* ICON BASE */
+.footer-social-icons .social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* HOVER */
+.footer-social-icons .social-icon:hover {
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* COLORS */
+.social-icon.fb { background: #3b5998; }
+.social-icon.ig { background: #e4405f; }
+.social-icon.ln { background: #0077b5; }
+.social-icon.yt { background: #ff0000; }
+.social-icon.wa { background: #25d366; }
+
+/* MOBILE CENTER */
+@media (max-width: 600px) {
+  .footer-social-icons {
+    justify-content: center;
+  }
+}
 
 

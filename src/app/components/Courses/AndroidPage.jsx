@@ -853,55 +853,73 @@ export default function AndroidPage() {
           </p>
 
           {/* ROLE CARDS */}
-       <Row className="gy-4 mt-4">
-      {/* Android App Developer */}
-      <Col md={4}>
-        <div className="career-card">
-          <FaAndroid className="career-icon" />
-          <span>Android App Developer</span>
-        </div>
-      </Col>
+      <Row className="gy-4 mt-4">
+  {/* Android App Developer */}
+  <Col md={4}>
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
+      <FaAndroid className="career-icon" />
+      <span>Android App Developer</span>
+    </div>
+  </Col>
 
-      {/* Mobile Application Developer */}
-      <Col md={4}>
-        <div className="career-card">
-          <FaMobileAlt className="career-icon" />
-          <span>Mobile Application Developer</span>
-        </div>
-      </Col>
+  {/* Mobile Application Developer */}
+  <Col md={4}>
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
+      <FaMobileAlt className="career-icon" />
+      <span>Mobile Application Developer</span>
+    </div>
+  </Col>
 
-      {/* Kotlin Developer */}
-      <Col md={4}>
-        <div className="career-card">
-          <FaServer className="career-icon" />
-          <span>Kotlin Developer</span>
-        </div>
-      </Col>
+  {/* Kotlin Developer */}
+  <Col md={4}>
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
+      <FaServer className="career-icon" />
+      <span>Kotlin Developer</span>
+    </div>
+  </Col>
 
-      {/* Software Engineer (Android) */}
-      <Col md={4}>
-        <div className="career-card">
-          <FaCode className="career-icon" />
-          <span>Software Engineer (Android)</span>
-        </div>
-      </Col>
+  {/* Software Engineer (Android) */}
+  <Col md={4}>
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
+      <FaCode className="career-icon" />
+      <span>Software Engineer (Android)</span>
+    </div>
+  </Col>
 
-      {/* Android UI/UX Developer */}
-      <Col md={4}>
-        <div className="career-card">
-          <FaPaintBrush className="career-icon" />
-          <span>Android UI/UX Developer</span>
-        </div>
-      </Col>
+  {/* Android UI/UX Developer */}
+  <Col md={4}>
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
+      <FaPaintBrush className="career-icon" />
+      <span>Android UI/UX Developer</span>
+    </div>
+  </Col>
 
-      {/* Mobile Software Engineer */}
-      <Col md={4}>
-        <div className="career-card">
-          <FaLaptopCode className="career-icon" />
-          <span>Mobile Software Engineer</span>
-        </div>
-      </Col>
-    </Row>
+  {/* Mobile Software Engineer */}
+  <Col md={4}>
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
+      <FaLaptopCode className="career-icon" />
+      <span>Mobile Software Engineer</span>
+    </div>
+  </Col>
+</Row>
 
           {/* DESCRIPTION */}
           <p className="career-note text-center mt-5">

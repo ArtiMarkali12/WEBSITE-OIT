@@ -1,0 +1,69 @@
+/* ===============================
+   PHOTO GALLERY SECTION
+================================ */
+.photo-gallery-section {
+    margin-top: 50px;
+}
+
+.gallery-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.photo-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+/* IMAGE CARD */
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+/* ===============================
+   TABLET
+================================ */
+@media (max-width: 991px) {
+    .photo-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 576px) {
+    .photo-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 190px;
+    }
+
+    .gallery-title {
+        font-size: 24px;
+    }
+}

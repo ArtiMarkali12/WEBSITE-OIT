@@ -480,10 +480,6 @@
 
 // export default SectionSlider2;
 
-
-
-
-
 // import { NavLink } from "react-router-dom";
 // import { register } from "swiper/element/bundle";
 // import { useState, useEffect } from "react";
@@ -767,7 +763,6 @@
 //     },
 //   ];
 
-
 //   return (
 //     <>
 //       {/* ===== HERO ===== */}
@@ -980,8 +975,6 @@
 
 
 
-
-
 import { NavLink } from "react-router-dom";
 import { register } from "swiper/element/bundle";
 import { useState, useEffect } from "react";
@@ -1126,7 +1119,7 @@ function SectionSlider2() {
     },
     {
       name: ".NET FullStack",
-      image: publicUrlFor("assets/images/courses/dotNetCourse.png"),
+      image: publicUrlFor("assets/images/courses/dotnet.png"),
       desc: "C#, ASP.NET MVC, SQL Server, HTML, CSS & JS.",
       path: "/courses/dotnet-fullstack-development",
     },
@@ -1135,7 +1128,7 @@ function SectionSlider2() {
   return (
     <>
       {/* ===== HERO ===== */}
-      <div className="sx-bnr-2-wrap-outer home-2-slider">
+      {/* <div className="sx-bnr-2-wrap-outer home-2-slider">
         <swiper-container>
           <swiper-slide
             style={{
@@ -1156,6 +1149,68 @@ function SectionSlider2() {
               </div>
 
               <div className="hero-right">
+                <ContactForm />
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div> */}
+
+
+            {/* ===== HERO ===== */}
+      <div className="sx-bnr-2-wrap-outer home-2-slider">
+        <swiper-container>
+          <swiper-slide
+            style={{
+              backgroundImage: `url(${homepage})`,
+              backgroundSize: "cover",
+            }}
+          >
+            <div className="hero-overlay" />
+
+            <div className="hero-form-wrapper">
+              {/* ===== LEFT SIDE (UPDATED HERE ONLY) ===== */}
+              <div className="hero-left"  style={{
+                    paddingLeft: "30px",}}>
+                {/* <h2
+                  style={{
+                   
+                    fontSize: "33px",
+                  }}
+                >
+                  Transform Your Career
+                </h2>
+                 
+                <h2 style={{color:"orange", fontSize: "33px",}}>
+                    <span style={{color:"white",fontSize: "38px"}}>With</span>
+                   &nbsp; IT Skills
+                </h2> */}
+
+                <h3>BEST IT TRAINING & PLACEMENT INSTITUTE IN PUNE</h3>
+                <h1>ORANGE ITECH</h1>
+                <h2>Build Job-Ready IT Skills with Expert Training</h2>
+
+                {/* 🔥 NEW CONTENT – LEFT SIDE ONLY */}
+                <div className="hero-left-extra">
+                  <p>
+                    100% Practical IT Training with Real-Time Projects &
+                    Industry Experts.
+                  </p>
+                  <ul>
+                    <li>✔ Live Project Based Learning</li>
+                    <li>✔ Placement Assistance</li>
+                    <li>✔ Internship Opportunities</li>
+                  </ul>
+                </div>
+
+                <NavLink to="/contact-us" className="orange-btn">
+                  Book Free Career Counseling
+                </NavLink>
+              </div>
+
+              {/* ===== RIGHT SIDE (FORM – UNCHANGED) ===== */}
+              <div className="hero-right">
+                <h2  className="text-center" style={{color:" #ff6600", fontSize:"35px" }}><b>Contact Form</b></h2>
                 <ContactForm />
               </div>
             </div>
@@ -1284,12 +1339,6 @@ function SectionSlider2() {
         )}
       </div>
 
-
-
-
-
-      
-
       {/* ===== COURSES GRID ===== */}
       <div className="course-section">
         <h2 className="course-title text-center">
@@ -1343,3 +1392,147 @@ function SectionSlider2() {
 }
 
 export default SectionSlider2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import { NavLink } from "react-router-dom";
+// import { register } from "swiper/element/bundle";
+// import { useState, useEffect } from "react";
+// import "./SectionSlider2.css";
+// import Stats from "./Stats";
+// import ContactForm from "../../../components/Contact-Form/ContactForm";
+
+// register();
+
+// const publicUrlFor = (path) => process.env.PUBLIC_URL + "/" + path;
+// const homepage = publicUrlFor("assets/images/homep/homepage.jpg");
+
+// const API = process.env.REACT_APP_API_BASE_URL;
+// const DOMAIN = process.env.REACT_APP_DOMAIN;
+
+// // ===== TABLE STYLES =====
+// const thStyle = {
+//   padding: "16px 12px",
+//   textAlign: "left",
+//   fontWeight: "700",
+//   fontSize: "14px",
+//   textTransform: "uppercase",
+// };
+
+// const tdStyle = {
+//   padding: "14px 12px",
+//   fontSize: "14px",
+//   borderBottom: "1px solid #eee",
+// };
+
+// function SectionSlider2() {
+//   const [mode, setMode] = useState("online");
+//   const [batches, setBatches] = useState([]);
+//   const [loadingBatches, setLoadingBatches] = useState(true);
+//   const [batchError, setBatchError] = useState("");
+
+//   // ===== FETCH BATCHES =====
+//   useEffect(() => {
+//     const fetchBatches = async () => {
+//       try {
+//         const res = await fetch(`${API}/api/batches`, {
+//           headers: { "x-domain": DOMAIN },
+//         });
+//         const data = await res.json();
+//         setBatches(Array.isArray(data) ? data : []);
+//       } catch (err) {
+//         setBatchError("Failed to load batches");
+//       } finally {
+//         setLoadingBatches(false);
+//       }
+//     };
+//     fetchBatches();
+//   }, []);
+
+//   return (
+//     <>
+//       {/* ===== HERO ===== */}
+//       <div className="sx-bnr-2-wrap-outer home-2-slider">
+//         <swiper-container>
+//           <swiper-slide
+//             style={{
+//               backgroundImage: `url(${homepage})`,
+//               backgroundSize: "cover",
+//             }}
+//           >
+//             <div className="hero-overlay" />
+
+//             <div className="hero-form-wrapper">
+//               {/* ===== LEFT SIDE (UPDATED HERE ONLY) ===== */}
+//               <div className="hero-left"  style={{
+//                     paddingLeft: "30px",}}>
+//                 <h2
+//                   style={{
+                   
+//                     fontSize: "33px",
+//                   }}
+//                 >
+//                   Transform Your Career
+//                 </h2>
+                 
+//                 <h2 style={{color:"orange", fontSize: "33px",}}>
+//                     <span style={{color:"white",fontSize: "38px"}}>With</span>
+//                    &nbsp; IT Skills
+//                 </h2>
+
+//                 <h3>BEST IT TRAINING & PLACEMENT INSTITUTE IN PUNE</h3>
+//                 <h1>ORANGE ITECH</h1>
+//                 <h2>Build Job-Ready IT Skills with Expert Training</h2>
+
+//                 {/* 🔥 NEW CONTENT – LEFT SIDE ONLY */}
+//                 <div className="hero-left-extra">
+//                   <p>
+//                     100% Practical IT Training with Real-Time Projects &
+//                     Industry Experts.
+//                   </p>
+//                   <ul>
+//                     <li>✔ Live Project Based Learning</li>
+//                     <li>✔ Placement Assistance</li>
+//                     <li>✔ Internship Opportunities</li>
+//                   </ul>
+//                 </div>
+
+//                 <NavLink to="/contact-us" className="orange-btn">
+//                   Book Free Career Counseling
+//                 </NavLink>
+//               </div>
+
+//               {/* ===== RIGHT SIDE (FORM – UNCHANGED) ===== */}
+//               <div className="hero-right">
+//                 <h2  className="text-center" style={{color:" #ff6600", fontSize:"35px" }}><b>Contact Form</b></h2>
+//                 <ContactForm />
+//               </div>
+//             </div>
+//           </swiper-slide>
+//         </swiper-container>
+//       </div>
+
+//       {/* बाकी सगळं जसंच्या तसं */}
+//       <Stats />
+      
+//     </>
+//   );
+// }
+
+// export default SectionSlider2;

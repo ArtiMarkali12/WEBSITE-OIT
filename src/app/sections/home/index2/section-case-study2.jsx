@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import PhotoGallery from "./PhotoGallery";
 
 function SectionCaseStudy2() {
     return (
@@ -12,7 +13,7 @@ function SectionCaseStudy2() {
                     <div className="social-icon-grid">
                         
                         {/* Facebook - fa-facebook-f vapra transparent sathi */}
-                        <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-card fb">
+                        {/* <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="social-card fb">
                             <i className="fa fa-facebook-f"></i>
                             <span>Facebook</span>
                         </a>
@@ -31,7 +32,7 @@ function SectionCaseStudy2() {
                             <i className="fa fa-youtube-play"></i>
                             <span>YouTube</span>
                         </a>
-                        
+                         */}
                         {/* <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer" className="social-card whatsapp">
                             <i className="fa fa-whatsapp"></i>
                             <span>WhatsApp</span>
@@ -48,13 +49,16 @@ function SectionCaseStudy2() {
 
                     </p>
                     <div className="sx-bnr-readmore">
-                        <a href="/contact-us" className="site-button sx-btn-primary icon sx-btn-lg">
+                        <a href="/contact-us" className="site-button sx-btn-primary icon sx-btn-lg mb-5">
                             <i className="fa fa-long-arrow-right" />
                             Contact Us Today
                         </a>
                     </div>
+                    
                 </div>
+                        
             </div>
+            <PhotoGallery/>
         </div>
     );
 }

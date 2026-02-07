@@ -87,6 +87,137 @@
 
 
 
+
+
+
+
+
+
+
+
+
+// import React from "react";
+// import SectionAboutCompany2Inner from "./section-about-company2-inner";
+// import { publicUrlFor } from "../../../../globals/constants";
+// import "./place.css";
+
+// function SectionAboutCompany2() {
+//   const companyLogos = [
+//     "images/logos/image.png",
+//     "images/logos/image copy.png",
+//     "images/logos/image copy 2.png",
+//     "images/logos/image copy 3.png",
+//     "images/logos/image copy 4.png",
+//     // "images/logos/image copy 5.png",
+//     // "images/logos/image copy 6.png",
+//     // "images/logos/image copy 7.png",
+//     // "images/logos/image copy 8.png",
+//     // "images/logos/image copy 9.png",
+//     // "images/logos/image copy 10.png",
+//     // "images/logos/image copy 11.png",
+//     // "images/logos/image copy 12.png",
+//   ];
+
+//   const socialLinks = {
+//     youtube: "https://youtube.com/@orangeitech",
+//     linkedin: "https://www.linkedin.com/company/orange-itech-intstitue/",
+//     instagram: "https://www.instagram.com/orangeitech",
+//   };
+
+//   return (
+//     <div className="section-full p-t110 p-b80 bg-white sx-about-bx3-outer">
+//       <div className="container">
+//         <div className="section-content">
+
+//           {/* WHY CHOOSE US (UNCHANGED) */}
+//           <SectionAboutCompany2Inner />
+
+//           <div className="sx-placement-wrap">
+
+//             {/* HEADING */}
+//             <div className="sx-placement-heading">
+//               <h2 className="sx-title">
+//                 Our Students Placed In{" "}
+//                 <span>Top Companies</span>
+//               </h2>
+//               <p>
+//                 Our students are successfully placed across leading IT companies,
+//                 startups, and enterprise organizations.
+//               </p>
+//             </div>
+
+//             {/* ✅ COMPANY LOGOS GRID */}
+//             <div className="sx-center-scroller-box">
+//               <div className="sx-logo-grid">
+//                 {companyLogos.map((path, index) => (
+//                   <div className="sx-logo-item" key={index}>
+//                     <img
+//                       src={publicUrlFor(path)}
+//                       alt="Company Logo"
+//                     />
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+
+//             {/* SOCIAL ICONS */}
+//             <div className="sx-social-box-container">
+//               <div className="sx-social-icons-row">
+//                 <a
+//                   href={socialLinks.youtube}
+//                   target="_blank"
+//                   rel="noreferrer"
+//                   className="sx-s-icon yt"
+//                 >
+//                   <i className="fa fa-youtube-play"></i>
+//                 </a>
+//                 <a
+//                   href={socialLinks.linkedin}
+//                   target="_blank"
+//                   rel="noreferrer"
+//                   className="sx-s-icon ln"
+//                 >
+//                   <i className="fa fa-linkedin"></i>
+//                 </a>
+//                 <a
+//                   href={socialLinks.instagram}
+//                   target="_blank"
+//                   rel="noreferrer"
+//                   className="sx-s-icon ig"
+//                 >
+//                   <i className="fa fa-instagram"></i>
+//                 </a>
+//               </div>
+//             </div>
+
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default SectionAboutCompany2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React from "react";
 import SectionAboutCompany2Inner from "./section-about-company2-inner";
 import { publicUrlFor } from "../../../../globals/constants";
@@ -94,19 +225,11 @@ import "./place.css";
 
 function SectionAboutCompany2() {
   const companyLogos = [
-    "images/logos/image.png",
-    "images/logos/image copy.png",
-    "images/logos/image copy 2.png",
-    "images/logos/image copy 3.png",
-    "images/logos/image copy 4.png",
-    // "images/logos/image copy 5.png",
-    // "images/logos/image copy 6.png",
-    // "images/logos/image copy 7.png",
-    // "images/logos/image copy 8.png",
-    // "images/logos/image copy 9.png",
-    // "images/logos/image copy 10.png",
-    // "images/logos/image copy 11.png",
-    // "images/logos/image copy 12.png",
+    "images/logos/image.png",        // Zensar
+    "images/logos/image copy.png",   // Symantec
+    "images/logos/image copy 2.png", // Cognizant
+    "images/logos/image copy 3.png", // Rancore
+    "images/logos/image copy 4.png", // A.S Foundation
   ];
 
   const socialLinks = {
@@ -120,16 +243,13 @@ function SectionAboutCompany2() {
       <div className="container">
         <div className="section-content">
 
-          {/* WHY CHOOSE US (UNCHANGED) */}
           <SectionAboutCompany2Inner />
 
           <div className="sx-placement-wrap">
 
-            {/* HEADING */}
             <div className="sx-placement-heading">
               <h2 className="sx-title">
-                Our Students Placed In{" "}
-                <span>Top Companies</span>
+                Our Students Placed In <span>Top Companies</span>
               </h2>
               <p>
                 Our students are successfully placed across leading IT companies,
@@ -137,15 +257,12 @@ function SectionAboutCompany2() {
               </p>
             </div>
 
-            {/* ✅ COMPANY LOGOS GRID */}
+            {/* LOGOS */}
             <div className="sx-center-scroller-box">
               <div className="sx-logo-grid">
                 {companyLogos.map((path, index) => (
                   <div className="sx-logo-item" key={index}>
-                    <img
-                      src={publicUrlFor(path)}
-                      alt="Company Logo"
-                    />
+                    <img src={publicUrlFor(path)} alt="Company Logo" />
                   </div>
                 ))}
               </div>
@@ -154,28 +271,13 @@ function SectionAboutCompany2() {
             {/* SOCIAL ICONS */}
             <div className="sx-social-box-container">
               <div className="sx-social-icons-row">
-                <a
-                  href={socialLinks.youtube}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="sx-s-icon yt"
-                >
+                <a href={socialLinks.youtube} target="_blank" rel="noreferrer" className="sx-s-icon yt">
                   <i className="fa fa-youtube-play"></i>
                 </a>
-                <a
-                  href={socialLinks.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="sx-s-icon ln"
-                >
+                <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" className="sx-s-icon ln">
                   <i className="fa fa-linkedin"></i>
                 </a>
-                <a
-                  href={socialLinks.instagram}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="sx-s-icon ig"
-                >
+                <a href={socialLinks.instagram} target="_blank" rel="noreferrer" className="sx-s-icon ig">
                   <i className="fa fa-instagram"></i>
                 </a>
               </div>
@@ -189,3 +291,4 @@ function SectionAboutCompany2() {
 }
 
 export default SectionAboutCompany2;
+

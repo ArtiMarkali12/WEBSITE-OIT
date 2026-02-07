@@ -160,6 +160,22 @@
 
 
 
+/* ===== REMOVE BOOTSTRAP BLUE FOCUS EFFECT ===== */
+.form-control:focus,
+.form-select:focus,
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;   /* 👈 blue glow gone */
+  border-color: #ff6600 !important; /* optional orange border */
+}
+
+/* Bootstrap validation shadow remove */
+.form-control:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 
 

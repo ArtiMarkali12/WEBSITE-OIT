@@ -22,38 +22,69 @@
 }
 
 /* ===============================
-   COMPANY LOGOS GRID (STATIC)
+   LOGO CONTAINER
 ================================ */
 .sx-center-scroller-box {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+/* ===============================
+   DESKTOP – SINGLE ROW 🔥
+================================ */
 .sx-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 40px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-items: center;
+  gap: 30px;
 }
 
+/* LOGO ITEM */
 .sx-logo-item {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* LOGO IMAGE */
 .sx-logo-item img {
-  max-width: 220px;
-  max-height: 150px;
+  max-width: 190px;
+  max-height: 85px;
   width: auto;
   height: auto;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 
-.sx-logo-item img:hover {
-  transform: scale(1.08);
+/* ===============================
+   📱 MOBILE RESPONSIVE FIX 🔥
+================================ */
+@media (max-width: 768px) {
+  .sx-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 🔥 2 logos per row */
+    gap: 16px;
+  }
+
+  .sx-logo-item img {
+    max-width: 140px;
+    max-height: 65px;
+  }
+}
+
+/* ===============================
+   VERY SMALL PHONES
+================================ */
+@media (max-width: 400px) {
+  .sx-logo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .sx-logo-item img {
+    max-width: 120px;
+    max-height: 55px;
+  }
 }
 
 /* ===============================
@@ -88,288 +119,8 @@
   opacity: 0.9;
 }
 
-.yt {
-  background: #ff0000;
-}
-
-.ln {
-  background: #0077b5;
-}
-
+.yt { background: #ff0000; }
+.ln { background: #0077b5; }
 .ig {
-  background: linear-gradient(
-    45deg,
-    #f09433,
-    #e6683c,
-    #dc2743,
-    #cc2366,
-    #bc1888
-  );
-}
-
-/* ===============================
-   MOBILE RESPONSIVE
-================================ */
-@media (max-width: 768px) {
-  .sx-placement-heading .sx-title {
-    font-size: 28px;
-  }
-
-  .sx-logo-grid {
-    gap: 25px;
-  }
-
-  .sx-logo-item img {
-    max-width: 170px;
-    max-height: 90px;
-  }
-}
-/* Scroller Container */
-.sx-center-scroller-box {
-    max-width: 1200px;   /* slightly wider container */
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.sx-logo-scroller {
-    width: 100%;
-    padding: 20px 0;
-}
-
-/* Logo Grid */
-.sx-logo-track {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;   /* space between logos */
-}
-
-/* Each Logo Box */
-.sx-logo-item {
-    width: 280px;   /* 🔥 increased size */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Logo Image */
-.sx-logo-item img {
-    max-width: 240px;   /* 🔥 bigger logos */
-    max-height: 120px;  /* 🔥 taller */
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.sx-logo-item img:hover {
-    transform: scale(1.08);
-}
-
-/* SOCIAL ICONS (unchanged) */
-.sx-social-box-container {
-    text-align: center;
-    margin-top: 30px;
-    padding-bottom: 20px;
-}
-
-.sx-social-icons-row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.sx-s-icon {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-    transform: translateZ(0);
-}
-
-.fb { background-color: #3b5998; }
-.yt { background-color: #ff0000; }
-.ln { background-color: #0077b5; }
-.ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
-
-.sx-s-icon:hover {
-    transform: translateY(-3px);
-    opacity: 0.9;
-}
-
-
-
-/* ===============================
-   LOGO CONTAINER
-================================ */
-.sx-center-scroller-box {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ===============================
-   DESKTOP GRID
-================================ */
-.sx-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 24px;
-  justify-items: center;
-}
-
-/* ===============================
-   LOGO CARD
-================================ */
-.sx-logo-item {
-  width: 100%;
-  height: 110px;              /* 🔥 tight height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 10px;
-}
-
-/* LOGO IMAGE */
-.sx-logo-item img {
-  max-width: 140px;
-  max-height: 70px;
-  object-fit: contain;
-}
-
-/* ===============================
-   MOBILE FIX (IMPORTANT 🔥)
-================================ */
-@media (max-width: 768px) {
-  .sx-logo-grid {
-    grid-template-columns: repeat(2, 1fr);  /* 🔥 2 logos per row */
-    gap: 14px;                               /* 🔥 reduce vertical gap */
-  }
-
-  .sx-logo-item {
-    height: 90px;
-  }
-
-  .sx-logo-item img {
-    max-width: 120px;
-    max-height: 60px;
-  }
-}
-
-
-
-/* ===============================
-   LOGO CONTAINER
-================================ */
-.sx-center-scroller-box {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ===============================
-   LOGO GRID – 3 PER ROW
-================================ */
-.sx-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 🔥 ALWAYS 3 logos */
-  gap: 5px;                              /* 🔥 tight spacing */
-  justify-items: center;
-}
-
-/* ===============================
-   LOGO CARD
-================================ */
-.sx-logo-item {
-  width: 100%;
-  height: 95px;                          /* 🔥 equal height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 10px;
-}
-
-/* LOGO IMAGE */
-.sx-logo-item img {
-  max-width: 110px;
-  max-height: 55px;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.sx-logo-item img:hover {
-  transform: scale(1.05);
-}
-
-/* ===============================
-   SMALL DEVICES (VERY SMALL PHONES)
-================================ */
-@media (max-width: 380px) {
-  .sx-logo-item {
-    height: 80px;
-  }
-
-  .sx-logo-item img {
-    max-width: 95px;
-    max-height: 45px;
-  }
-}
-
-
-
-/* ===============================
-   COURSE CARD IMAGE FIX
-================================ */
-
-.course-image {
-  width: 100%;
-  height: 200px;              /* 🔥 same height for all */
-  overflow: hidden;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f8f8f8;        /* optional – clean look */
-}
-
-.course-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;          /* 🔥 magic line */
-}
-/* LOGO CONTAINER */
-.sx-center-scroller-box {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-/* GRID – GAP CONTROL ONLY */
-.sx-logo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 14px;   /* 👈 horizontal gap कमी */
-  row-gap: 8px;       /* 👈 vertical gap कमी */
-  justify-items: center;
-  align-items: center;
-}
-
-/* LOGO ITEM – HEIGHT UNCHANGED */
-.sx-logo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* IMAGE – AS IS */
-.sx-logo-item img {
-  max-width: 220px;
-  max-height: 150px;
-  object-fit: contain;
+  background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
 }

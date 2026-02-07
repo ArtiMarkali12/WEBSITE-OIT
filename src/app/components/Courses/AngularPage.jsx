@@ -913,44 +913,62 @@ export default function DotNetFullStackPage() {
           </p>
 
           {/* ROLE CARDS */}
-         <Row className="gy-4 mt-4">
+        <Row className="gy-4 mt-4">
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <SiAngular className="career-icon" />
       <span>Angular Developer</span>
     </div>
   </Col>
 
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaLaptopCode className="career-icon" />
       <span>Front-End Developer</span>
     </div>
   </Col>
 
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaServer className="career-icon" />
       <span>Web Application Developer</span>
     </div>
   </Col>
 
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaPaintBrush className="career-icon" />
       <span>UI Developer</span>
     </div>
   </Col>
 
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <FaLaptop className="career-icon" />
       <span>Enterprise Application Developer</span>
     </div>
   </Col>
 
   <Col md={4}>
-    <div className="career-card">
+    <div
+      className="career-card"
+      style={{ display: "flex", alignItems: "center", gap: "12px" }}
+    >
       <SiAngular className="career-icon" />
       <span>Angular Consultant</span>
     </div>

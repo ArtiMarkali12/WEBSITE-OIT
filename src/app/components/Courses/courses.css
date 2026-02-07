@@ -556,6 +556,11 @@ p, li, span, .btn, .card-text {
   font-weight: 600;
   color: #111;
 }
+.career-card {
+   display: flex; 
+   alignItems: center;
+    gap: 12px;
+}
 
 .career-note {
   font-size: 15px;
