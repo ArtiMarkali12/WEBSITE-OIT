@@ -96,14 +96,14 @@ export default function Footer() {
     <FaYoutube />
   </a>
 
-  <a
+  {/* <a
     href="https://wa.me/9975708774"
     target="_blank"
     rel="noopener noreferrer"
     className="social-icon wa"
   >
     <FaWhatsapp />
-  </a>
+  </a> */}
 </div>
 
 </div>
